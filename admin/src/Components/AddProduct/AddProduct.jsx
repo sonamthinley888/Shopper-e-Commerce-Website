@@ -16,10 +16,15 @@ const AddProduct = () => {
         setImage(e.target.files[0]);
     }
     const changeHandler = (e) => {
-        setProductDetails({...productDetails,[e.target.name]:e.target.value}) 
+        setProductDetails({...productDetails,[e.target.name]:e.target.value}); 
     }
 
     const Add_Product = async ()=> {
+
+        if (!productDetails.category) {
+            alert("Please select a category.");
+            return;
+        }
         console.log(productDetails);
         let responseData;
         let product = productDetails;
@@ -70,8 +75,9 @@ const AddProduct = () => {
             </div>
         </div>
         <div className="addproduct-itemfield">
-            <p>Produce Category</p>
-            <select value={productDetails.category}onChange={changeHandler} name="category" className='add-product-selector'>
+            <p>Product Category</p>
+            <select value={productDetails.category} onChange={changeHandler} name="category" className='add-product-selector'>
+                <option value="">Select a category</option>
                 <option value="women">Women</option>
                 <option value="men">Men</option>
                 <option value="kid">Kid</option>
