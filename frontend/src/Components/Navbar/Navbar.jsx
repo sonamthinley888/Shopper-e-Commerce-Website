@@ -18,10 +18,10 @@ export const Navbar = () => {
 
   return (
     <div className='navbar'>
-        <div className="nav-logo">
-            <img src={logo} alt="" />
+        <Link to="/" className="nav-logo" onClick={() => setMenu("shop")}>
+            <img src={logo} alt="Shop Logo" />
             <p>SHOPPER</p>
-        </div>
+        </Link>
         <img className='nav-dropdown' onClick={dropdown_toggle} src={nav_dropdown} alt="" />
         <ul ref={menuRef} className="nav-menu">
             <li onClick={()=>{setMenu("shop")} }  ><Link style={{textDecoration:'none'}} to='/'>Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
