@@ -39,7 +39,8 @@ app.use('/images',express.static('upload/images'))
 app.post("/upload", upload.single('product'),(req,res)=>{
     res.json({
         success:1,
-        image_url:`http://localhost:${port}/images/${req.file.filename}`
+        image_url: `https://shopper-e-commerce-website-jheh.onrender.com/images/${req.file.filename}`
+
     })
 })
 
@@ -267,13 +268,17 @@ app.post('/getcart',fetchUser,async (req,res) => {
     res.json(userData.cartData);
 })
 
-app.listen(port,(error)=>{
-    if (!error){
-        console.log("Server Running on Port "+port)
-    }
-    else{
-        console.log("Error : "+error)
-    }
-})
+// app.listen(port,(error)=>{
+//     if (!error){
+//         console.log("Server Running on Port "+port)
+//     }
+//     else{
+//         console.log("Error : "+error)
+//     }
+// })
 
+const port = process.env.PORT || 4000;
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
 
