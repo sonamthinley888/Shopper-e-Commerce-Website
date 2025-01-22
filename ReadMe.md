@@ -25,6 +25,7 @@ Shopper is a simple e-commerce website that allows users to browse, search, and 
 - **MongoDB** - NoSQL database for storing product and user data.
 - **Multer** - Middleware for handling image uploads.
 - **Google Cloud Storage** - For storing product images.
+- **Render** - For backend deployment.
 
 ## Project Structure
 
@@ -36,7 +37,7 @@ The frontend is built with **React.js** and deployed using **Firebase Hosting**.
 
 ### Backend
 
-The backend is built with **Node.js** and **Express.js**, with **MongoDB** used to store product and user data.
+The backend is built with **Node.js** and **Express.js**, with **MongoDB** used to store product and user data. The backend is deployed on **Render**.
 
 ## Installation
 
