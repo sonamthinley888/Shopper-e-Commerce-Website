@@ -2,121 +2,145 @@
 
 ## Overview
 
-Shopper is a simple e-commerce website that allows users to browse and search for products. This project focuses on frontend and backend functionalities without checkout and payment features.
+Shopper is a simple e-commerce website that allows users to browse, search, and interact with products. This project focuses on building the core functionalities of an e-commerce website, including user authentication, product management, and cart features. Note that checkout and payment features are not implemented.
 
 ## Features
 
-- User authentication (sign up, login, logout)
-- Browse and search for products
-- Add products to cart
-- View product details
-- Responsive design
+- **User Authentication:** Users can sign up, log in, and log out.
+- **Product Management:** Users can browse products, view product details, and search for items.
+- **Shopping Cart:** Users can add products to their cart for future viewing.
+- **Responsive Design:** The website is fully responsive, ensuring a good user experience across devices.
 
 ## Tech Stack
 
 ### Frontend:
 
-- **React.js**
-- **Firebase** (for deployment)
+- **React.js** - JavaScript library for building user interfaces.
+- **Firebase** - For deployment and user authentication.
 
 ### Backend:
 
-- **Node.js**
-- **Express.js**
-- **MongoDB** (for storing product and user data)
-- **Render** (for backend deployment)
-- **Multer** for handling image uploads
-- **Google Cloud Storage** (for storing product images)
+- **Node.js** - JavaScript runtime for building the backend.
+- **Express.js** - Web framework for Node.js to handle routing.
+- **MongoDB** - NoSQL database for storing product and user data.
+- **Multer** - Middleware for handling image uploads.
+- **Google Cloud Storage** - For storing product images.
 
 ## Project Structure
 
 The project is divided into two main parts: **frontend** and **backend**.
 
-### Frontend:
+### Frontend
 
 The frontend is built with **React.js** and deployed using **Firebase Hosting**.
 
-frontend/ ├── .firebase/ # Firebase configuration files ├── .firebaserc # Firebase project settings ├── public/ # Static files (e.g., index.html, images) ├── src/ # React components and pages │ ├── Components/ # Reusable components (e.g., buttons, navigation) │ └── Pages/ # Pages of the website (e.g., home, product details, cart) ├── .gitignore # Git ignore file ├── README.md # Project documentation ├── firebase.json # Firebase hosting and functions config ├── index.html # HTML template ├── package.json # Frontend dependencies and scripts └── package-lock.json # Dependency lock file
+frontend/
+├── .firebase/ # Firebase configuration files
+├── .firebaserc # Firebase project settings
+├── public/ # Static files (e.g., index.html, images)
+├── src/ # React components and pages
+│ ├── Components/ # Reusable components (e.g., buttons, navigation)
+│ └── Pages/ # Pages of the website (e.g., home, product details, cart)
+├── .gitignore # Git ignore file
+├── README.md # Project documentation
+├── firebase.json # Firebase hosting and functions config
+├── index.html # HTML template
+├── package.json # Frontend dependencies and scripts
+└── package-lock.json # Dependency lock file
 
-csharp
-Copy
-Edit
-
-### Backend:
+### Backend
 
 The backend is built with **Node.js** and **Express.js**, with **MongoDB** used to store product and user data.
 
-backend/ ├── config/ # Configuration files (e.g., MongoDB, Google Cloud) ├── node_modules/ # Node.js dependencies ├── upload/images/ # Directory to store uploaded images ├── .gitignore # Git ignore file ├── README.md # Backend documentation ├── index.js # Main entry point for the backend ├── package.json # Backend dependencies and scripts └── package-lock.json # Dependency lock file
-
-markdown
-Copy
-Edit
+backend/
+├── config/ # Configuration files (e.g., MongoDB, Google Cloud)
+├── node_modules/ # Node.js dependencies
+├── upload/images/ # Directory to store uploaded images
+├── .gitignore # Git ignore file
+├── README.md # Backend documentation
+├── index.js # Main entry point for the backend
+├── package.json # Backend dependencies and scripts
+└── package-lock.json # Dependency lock file
 
 ## Installation
 
 ### Prerequisites:
 
-Ensure you have the following installed:
+Before you start, ensure you have the following installed:
 
 - Node.js (v22.12.0 or later)
 - MongoDB
 - Firebase CLI (for frontend deployment)
 - Google Cloud SDK (for managing cloud storage)
 
-### Steps:
+### Setup Instructions:
 
-1. Clone the repository:
+1. **Clone the Repository**  
+   Clone the project to your local machine:
    ```bash
-   git clone https://github.com/sonamthinley888/render-express-deployment.git
+   git clone https://github.com/sonamthinley888/shopper-ecommerce-website.git
    cd shopper-ecommerce-website
    ```
 
-### Install backend dependencies:
+### Install Backend Dependencies
 
-bash
-Copy
-Edit
+Navigate to the backend folder and install the necessary packages:
+
 cd backend
 npm install
-Set up MongoDB:
 
-Ensure MongoDB is running locally or use a cloud service like MongoDB Atlas.
+### Setup MongoDB
+
+Make sure MongoDB is running locally or use a cloud service like MongoDB Atlas.
 Update your config.js or .env file with your MongoDB connection string.
-Set up Google Cloud Storage:
+
+### Set up Google Cloud Storage
 
 Create a Google Cloud project and enable Cloud Storage.
 Set up a service account and download the credentials JSON file.
-Set the environment variable GOOGLE_APPLICATION_CREDENTIALS to the path of the credentials file.
-Start the backend server:
+Set the environment variable GOOGLE_APPLICATION_CREDENTIALS to the path of your credentials file.
 
-bash
-Copy
-Edit
+### Start the Backend Server
+
+Launch the backend server:
+
 npm start
-Install frontend dependencies:
+Install Frontend Dependencies
+Navigate to the frontend folder and install the required dependencies:
 
-bash
-Copy
-Edit
 cd frontend
 npm install
-Configure Firebase:
-
+Configure Firebase
 Set up Firebase for hosting and authentication.
-Add your Firebase credentials to the frontend's Firebase configuration file.
-Deploy the frontend:
+Add your Firebase credentials to the frontend’s Firebase configuration file.
 
-bash
-Copy
-Edit
+### Deploy Frontend
+
+Deploy the frontend to Firebase hosting:
+
 firebase deploy
-Open your browser and go to the Firebase hosting URL to view the application.
+Access the Website
+Open your browser and navigate to the Firebase hosting URL to see the application in action.
 
-### Usage
+## Usage
 
-Sign up / Login: Users can create an account or log in to access product features.
-Browse / Search Products: Users can explore and search for available products.
-Add to Cart: Products can be added to the cart for future viewing.
-Product Details: Detailed information about each product is displayed.
-Contributing
-If you'd like to contribute to the project, feel free to fork the repository, make changes, and submit a pull request. All contributions are welcome!
+Once the app is up and running, you can:
+
+Sign up / Log in: Create an account or log in to start using the app.
+Browse Products: View available products, search, and filter them.
+View Product Details: See detailed information for each product.
+Add to Cart: Add products to your shopping cart for later viewing.
+
+### Contributing
+
+We welcome contributions! If you'd like to improve this project, please follow these steps:
+
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Make your changes and commit them (git commit -m 'Add new feature').
+Push to your forked repository (git push origin feature-branch).
+Open a pull request.
+
+### License
+
+Feel free to open an issue or contact me if you encounter any problems or have any questions.
