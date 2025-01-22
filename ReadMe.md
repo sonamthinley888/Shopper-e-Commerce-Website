@@ -63,61 +63,61 @@ Before you start, ensure you have the following installed:
 
 Navigate to the backend folder and install the necessary packages:
 
-cd backend
-npm install
+-cd backend
+-npm install
 
 ### Setup MongoDB
 
-Make sure MongoDB is running locally or use a cloud service like MongoDB Atlas.
-Update your config.js or .env file with your MongoDB connection string.
+-Make sure MongoDB is running locally or use a cloud service like MongoDB Atlas.
+-Update your config.js or .env file with your MongoDB connection string.
 
 ### Set up Google Cloud Storage
 
-Create a Google Cloud project and enable Cloud Storage.
-Set up a service account and download the credentials JSON file.
-Set the environment variable GOOGLE_APPLICATION_CREDENTIALS to the path of your credentials file.
+-Create a Google Cloud project and enable Cloud Storage.
+-Set up a service account and download the credentials JSON file.
+-Set the environment variable GOOGLE_APPLICATION_CREDENTIALS to the path of your credentials file.
 
 ### Start the Backend Server
 
 Launch the backend server:
 
-npm start
-Install Frontend Dependencies
-Navigate to the frontend folder and install the required dependencies:
+-npm start
+-Install Frontend Dependencies
+-Navigate to the frontend folder and install the required dependencies:
 
-cd frontend
-npm install
-Configure Firebase
-Set up Firebase for hosting and authentication.
-Add your Firebase credentials to the frontend’s Firebase configuration file.
+-cd frontend
+-npm install
+-Configure Firebase
+-Set up Firebase for hosting and authentication.
+-Add your Firebase credentials to the frontend’s Firebase configuration file.
 
 ### Deploy Frontend
 
-Deploy the frontend to Firebase hosting:
+-Deploy the frontend to Firebase hosting:
 
-firebase deploy
-Access the Website
-Open your browser and navigate to the Firebase hosting URL to see the application in action.
+-firebase deploy
+-Access the Website
+-Open your browser and navigate to the Firebase hosting URL to see the application in action.
 
 ## Usage
 
-Once the app is up and running, you can:
+-Once the app is up and running, you can:
 
-Sign up / Log in: Create an account or log in to start using the app.
-Browse Products: View available products, search, and filter them.
-View Product Details: See detailed information for each product.
-Add to Cart: Add products to your shopping cart for later viewing.
+-Sign up / Log in: Create an account or log in to start using the app.
+-Browse Products: View available products, search, and filter them.
+-View Product Details: See detailed information for each product.
+-Add to Cart: Add products to your shopping cart for later viewing.
 
 ### Contributing
 
-We welcome contributions! If you'd like to improve this project, please follow these steps:
+-We welcome contributions! If you'd like to improve this project, please follow these steps:
 
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Make your changes and commit them (git commit -m 'Add new feature').
-Push to your forked repository (git push origin feature-branch).
-Open a pull request.
+-Fork the repository.
+-Create a new branch (git checkout -b feature-branch).
+-Make your changes and commit them (git commit -m 'Add new feature').
+-Push to your forked repository (git push origin feature-branch).
+-Open a pull request.
 
 ### License
 
-Feel free to open an issue or contact me if you encounter any problems or have any questions.
+-Feel free to open an issue or contact me if you encounter any problems or have any questions.
