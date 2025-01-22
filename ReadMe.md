@@ -34,33 +34,9 @@ The project is divided into two main parts: **frontend** and **backend**.
 
 The frontend is built with **React.js** and deployed using **Firebase Hosting**.
 
-frontend/
-├── .firebase/ # Firebase configuration files
-├── .firebaserc # Firebase project settings
-├── public/ # Static files (e.g., index.html, images)
-├── src/ # React components and pages
-│ ├── Components/ # Reusable components (e.g., buttons, navigation)
-│ └── Pages/ # Pages of the website (e.g., home, product details, cart)
-├── .gitignore # Git ignore file
-├── README.md # Project documentation
-├── firebase.json # Firebase hosting and functions config
-├── index.html # HTML template
-├── package.json # Frontend dependencies and scripts
-└── package-lock.json # Dependency lock file
-
 ### Backend
 
 The backend is built with **Node.js** and **Express.js**, with **MongoDB** used to store product and user data.
-
-backend/
-├── config/ # Configuration files (e.g., MongoDB, Google Cloud)
-├── node_modules/ # Node.js dependencies
-├── upload/images/ # Directory to store uploaded images
-├── .gitignore # Git ignore file
-├── README.md # Backend documentation
-├── index.js # Main entry point for the backend
-├── package.json # Backend dependencies and scripts
-└── package-lock.json # Dependency lock file
 
 ## Installation
 
